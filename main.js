@@ -1,21 +1,4 @@
 
-// let src = 'https://i.giphy.com/media/l1J9AS7rcsFgTYH28/giphy.webp';
-
-// const positions = {
-//   image1: {
-//     top: '0',
-//     left: '0',
-//     src: src
-//   },
-//   image2: {
-//     top: '300px',
-//     left: '300px',
-//     src: src
-//   }
-// }
-
-// localStorage.setItem('flowers', JSON.stringify(positions))
-
 const urls = [
   'https://media2.giphy.com/media/xThta458hXUetKTfvW/source.gif',
   'https://thumbs.gfycat.com/AntiqueSillyBeardedcollie-size_restricted.gif',
@@ -42,7 +25,6 @@ function randomWidth() {
   let randomWidth = Math.floor(Math.random() * maxWidth) + 'px';
   return randomWidth;
 }
-
 
 
 function createPlant() {
@@ -91,16 +73,21 @@ function dragElement(elmnt) {
     elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
   }
 
-  function closeDragElement() {
+  function closeDragElement(e) {
     // stop moving when mouse button is released:
     document.onmouseup = null;
     document.onmousemove = null;
+    let array = JSON.parse(localStorage.getItem('flowers'));
+    let index = e.target.dataset.index;
+    array[index].left = e.target.style.left;
+    array[index].top = e.target.style.top;
+    localStorage.setItem('flowers', JSON.stringify(array));
   }
 }
 
 window.onload = function() {
   let images = JSON.parse(localStorage.getItem('flowers'));
-  Object.values(images).forEach(value => {
+    images.forEach(value => {
     if (value === '') {
       return;
     }
