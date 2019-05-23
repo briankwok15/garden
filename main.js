@@ -6,7 +6,12 @@ const urls = [
   'https://i.giphy.com/media/l1J9AS7rcsFgTYH28/giphy.webp',
   'https://coolguy.website/aesthetic/assets/tulips.gif',
   'https://gifimage.net/wp-content/uploads/2017/08/transparent-gif-tumblr-26.gif',
-  'https://sitejerk.com/images/gif-or-png-9.gif'
+  'https://sitejerk.com/images/gif-or-png-9.gif',
+  'https://66.media.tumblr.com/d77c9a14634054b6406d4a3adf2c33b6/tumblr_oqxccq1ryo1uf5tbgo1_r3_500.gif',
+  'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5a0a8df1-1e56-47fd-b834-6e0fa80ecbdb/d80voyd-9a1976cc-3d63-4b97-8fa6-468df6d466f1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVhMGE4ZGYxLTFlNTYtNDdmZC1iODM0LTZlMGZhODBlY2JkYlwvZDgwdm95ZC05YTE5NzZjYy0zZDYzLTRiOTctOGZhNi00NjhkZjZkNDY2ZjEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.FVTABjZiX9Hv8JvLj1tRyqDZzW4KVOK5-_wISGjpMLo',
+  'https://unixtitan.net/images/nature-transparent-pixel-4.gif',
+  'http://www.this-magic-sea.com/IMAGES/TREEANM.GIF'
+
 ];
 
 function randomUrl() {
