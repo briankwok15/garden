@@ -7,11 +7,3 @@
   z-index: 500;
 }
 
-.floating-plant2 {
-  position: fixed;
-  top: 300;
-  left: 300;
-  height: 50px;
-  width: 50px;
-  z-index: 500;
-}

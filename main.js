@@ -97,6 +97,10 @@ window.onload = function() {
     img.style.top = value.top;
     img.classList.add('floating-plant');
     img.dataset.index = value.index;
+    // img.addEventListener('click', (e) => {
+    //   e.target.style.height = String(parseInt(e.target.height) * 1.1) + 'px';
+    //   e.target.style.width = String(parseInt(e.target.width) * 1.1) + 'px';
+    // })
     img.addEventListener('dblclick', (e) => {
       e.target.parentNode.removeChild(e.target);
       let array = JSON.parse(localStorage.getItem('flowers'));
